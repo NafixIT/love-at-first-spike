@@ -1,16 +1,81 @@
-# React + Vite
+# 🏐 Love at First Spike
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**A volleyball scoreboard and match-day experience built for the love of the game.**
 
-Currently, two official plugins are available:
+Welcome to Love at First Spike, a volleyball web project designed to bring the excitement of the court to a digital experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 **Live Website:** https://nafixit.github.io/love-at-first-spike/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Volleyball-themed welcome screen
+- Video-based background experience
+- Responsive web interface
+- Built with React and Vite
 
-## Expanding the Oxlint configuration
+*Update this list as additional scoreboard and match features are completed.*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tech Stack
+
+- React
+- JavaScript
+- Vite
+- CSS
+- GitHub Pages
+
+## 🚀 Run Locally
+
+### Prerequisites
+
+Install [Node.js](https://nodejs.org/) before starting.
+
+### Installation
+
+```bash
+git clone https://github.com/NafixIT/love-at-first-spike.git
+cd love-at-first-spike
+npm install
+npm run dev
+```
+
+Open the local URL shown in your terminal.
+
+## 📁 Project Structure
+
+```text
+love-at-first-spike/
+├── public/
+│   └── videos/
+├── src/
+│   ├── App.jsx
+│   ├── WelcomeScreen.jsx
+│   └── WelcomeScreen.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+*The structure above is illustrative. Adjust it to match the actual files in the repository.*
+
+## 🌍 Deployment
+
+The project is hosted using GitHub Pages.
+
+**Visit:** https://nafixit.github.io/love-at-first-spike/
+
+## 🗺️ Future Improvements
+
+- Interactive live scorekeeping
+- Set and match tracking
+- Team and player information
+- Match history
+- Mobile-friendly scoreboard controls
+
+## 👤 Author
+
+Created by [NafixIT](https://github.com/NafixIT).
+
+---
+
+*Made for volleyball, teamwork, and the love of the game.* 🏐
