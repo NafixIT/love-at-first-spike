@@ -2,12 +2,14 @@
 import { useEffect, useState } from "react";
 import "./WelcomeScreen.css";
 
+
 const videos = [
   "/videos/50a361d3e2.mp4",
   "/videos/50a361d3e2%20copy.mp4",
   "/videos/921-141890445_medium.mp4",
   "/videos/921-141890445_medium%20copy.mp4",
 ];
+
 
 export default function WelcomeScreen({ onBegin }) {
   const [activeVideo, setActiveVideo] = useState(0);
