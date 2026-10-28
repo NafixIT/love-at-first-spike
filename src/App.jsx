@@ -1,5 +1,6 @@
 // src/App.jsx
 import { useEffect, useReducer, useRef, useState } from "react";
+import WelcomeScreen from "./WelcomeScreen.jsx";
 import {
   createMatch,
   reducer,
@@ -1322,8 +1323,7 @@ function MatchPage({ match, dispatch }) {
 
 export default function App() {
   const [match, dispatch] = useReducer(reducer, null, loadMatch);
-
-  // Save after every change.
+  const [showWelcome, setShowWelcome] = useState(true);
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(match));
@@ -1335,7 +1335,10 @@ export default function App() {
   return (
     <>
       <style>{CSS}</style>
-      {match.started ? (
+
+      {showWelcome ? (
+        <WelcomeScreen onBegin={() => setShowWelcome(false)} />
+      ) : match.started ? (
         <MatchPage match={match} dispatch={dispatch} />
       ) : (
         <SetupPage match={match} dispatch={dispatch} />
